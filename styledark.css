@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white !important;
+}
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+    background-color: #262626;
+}
+
+nav {
+    background-color: #141414;
+    height: 70px;
+}
+
+.instagram {
+    color: black !important;
+}
+
+@media screen and (max-width: 413px) {
+
+    .nav-links {
+        background-color: #262626;
+        color: #fff !important;
+    }
+
+
+}
