@@ -201,15 +201,15 @@ nav {
     outline: none;
     display: inline;
     margin: 144px auto 214px;
-}
-
-.btn-contactar a {
+    display: inline-block;
     font-family: Exo-Bold;
     font-weight: bolder;
     text-decoration: none;
     font-size: 20px;
     color: #fff;
 }
+
+
 
 .btn-contactar:hover {
     background-color: #3ABE4C;
