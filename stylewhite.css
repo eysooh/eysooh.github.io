@@ -23,6 +23,22 @@ button a {
     color: white !important;
 }
 
+.ph-div, .il-div {
+    background-color: #1414147a!important;
+}
+
+.ph-div h3, .il-div h3 {
+    color: white!important;
+}
+
+.ph-div p, .il-div p {
+    color: white!important;
+}
+
+.ph-div button, .il-div button {
+    color: white!important;
+}
+
 @media screen and (max-width: 413px) {
 
     .nav-links {

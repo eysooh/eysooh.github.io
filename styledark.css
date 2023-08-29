@@ -22,6 +22,10 @@ nav {
     color: black !important;
 }
 
+main {
+    background-color: #262626;
+}
+
 @media screen and (max-width: 413px) {
 
     .nav-links {
