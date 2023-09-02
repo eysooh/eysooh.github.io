@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styledark.css" id="theme">
     <link rel="stylesheet" href="./fonts.css">
     <link rel="icon" href="./img/logo.png" type="image/png">
-
+    <label for=""></label>
 </head>
 
 <body>
@@ -27,8 +27,8 @@
                     <ul class="nav-links">
                         <li><a class="link-con-linea" href="https://eysooh.github.io/">Inicio</a></li>
                         <li><a class="link-con-linea" href="#habilidades">Habilidades</a></li>
-                        <li><a class="link-con-lineaunlock" href="#">Servicios</a></li>
-                        <li><a class="link-con-lineaunlock" href="#">Contacto</a></li>
+                        <li><a class="link-con-linea" href="#services">Servicios</a></li>
+                        <li><a class="link-con-linea green" target="_blank" href="https://wa.link/ca2p6w">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,18 +38,19 @@
             <img id="logo-imgEysooh" src="./img/logoEysooh.png" alt="Logo">
             <h1>Servicios de diseño grafico</h1>
             <div class="btn">
-                <a href="https://wa.link/ca2p6w" class="btn-contactar">Contactar</a>
+                <a  target="_blank" href="https://wa.link/ca2p6w" class="btn-contactar">Contactar</a>
 
             </div>
         </div>
     </header>
+
     <aside>
         <div class="aside-menu">
             <ul>
                 <li><a href="https://eysooh.github.io/">Inicio</a><hr></li>
                 <li><a href="#habilidades">Habilidades</a><hr></li>
-                <li><a class="link-con-lineaunlock" href="#servicios">Servicios</a><hr></li>
-                <li><a class="link-con-lineaunlock" href="#contacto">Contacto</a><hr></li>
+                <li><a class="link-con-linea" href="#services">Servicios</a><hr></li>
+                <li><a class="link-con-linea green" target="_blank" href="https://wa.link/ca2p6w">Contacto</a><hr></li>
             </ul>
         </div>
     </aside>
@@ -66,24 +67,63 @@
     <main>
         <section id="habilidades">
             <div>
-                <h2>
-                    Habilidades
-                </h2>
+                <h2 class="hh-title">Habilidades</h2>
                 <div class="h-container">
                     <div class="ph-div">
                         <h3>Photoshop</h3>
                         <p>Retoque fotografico, mockups e imagenes publicitarias, miniaturas de youtube y mas.</p>
                         <img src="./img/ps.png" alt="Photoshop">
+                        <button class="v-mas">ver mas</button>
                     </div>
                     <div class="il-div">
                         <h3>Illustrator</h3>
-                        <p>Creacion de logos, branding , iconos, diseños infograficos, arte digital y mas.</p>
-                        <img src="./img/il.png" alt="Illustrator">            
+                        <p>Creacion de logos, branding, iconos, diseños infograficos, arte digital y mas.</p>
+                        <img src="./img/il.png" alt="Illustrator">
+                        <button class="v-mas">ver mas</button>         
                     </div>
                 </div>
-                
             </div>
         </section>
+        <section id="services">
+            <h2 class="hs-title">Servicios</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="article">
+                        <h4 class="article-text">Producción<br>de Video</h4>
+                        <button class="cotizar-btn" id="cotizarBtn">Cotizar</button>
+                        <img src="./img/1.png" alt="Imagen del artículo" class="article-image">
+                    </div>
+                    <div class="article">
+                        <h4 class="article-text">Diseño grafico<br>y visual</h4>
+                        <button class="cotizar-btn" id="cotizarBtn">Cotizar</button>
+                        <img src="./img/2.png" alt="Imagen del artículo" class="article-image">
+                    </div>
+                    <div class="article">
+                        <h4 class="article-text">Fotografía</h4>
+                        <button class="cotizar-btn" id="cotizarBtn">Cotizar</button>
+                        <img src="./img/3.png" alt="Imagen del artículo" class="article-image">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="article">
+                        <h4 class="article-text">Asesoramiento<br>y consultoría</h4>
+                        <button class="cotizar-btn" id="cotizarBtn">Cotizar</button>
+                        <img src="./img/4.png" alt="Imagen del artículo" class="article-image">
+                    </div>
+                    <div class="article">
+                        <h4 class="article-text">Producción de<br>contenido digital</h4>
+                        <button class="cotizar-btn" id="cotizarBtn">Cotizar</button>
+                        <img src="./img/5.png" alt="Imagen del artículo" class="article-image">
+                    </div>
+                    <div class="article">
+                        <h4 class="article-text">Animación y<br>efectos visuales</h4>
+                        <button class="cotizar-btn" id="cotizarBtn">Cotizar</button>
+                        <img src="./img/6.png" alt="Imagen del artículo" class="article-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
     <footer>
         <div>

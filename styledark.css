@@ -9,22 +9,34 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-header {
+body {
     background-color: #262626;
 }
 
 nav {
-    background-color: #141414;
+    background-color: #141414cc;
     height: 70px;
+}
+
+header {
+    background-image: url(./img/header.png);
+    height: 99.74vh;
+}
+
+#habilidades {
+    background-image: url(./img/habilidades.png);
+    height: 99.69vh;
+}
+
+#services {
+    background-image: url(./img/servicios.png);
+    height: 99.69vh;
 }
 
 .instagram {
     color: black !important;
 }
 
-main {
-    background-color: #262626;
-}
 
 @media screen and (max-width: 413px) {
 
