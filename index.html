@@ -60,6 +60,30 @@ flexibility(document.documentElement);
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
 					background-image: none !important;
 				}
+
+				#responsiveIframe {
+					width: 20%!important;
+				}
+
+				@media screen and (min-height: 1624px) {
+					#responsiveIframe {
+					width: 40%!important;
+				}
+					
+				}
+
+				@media screen and (min-height: 1024px) {
+					#responsiveIframe {
+					width: 60%!important;
+				}
+					
+				@media screen and (min-height: 640px) {
+					#responsiveIframe {
+					width: 100%!important;
+				} 
+ 
+				}
+
 				@media screen and (max-height: 1024px) {
 					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
 					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -71,7 +95,11 @@ flexibility(document.documentElement);
 					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
 						background-image: none !important;
 					}
-				}</style>
+				}
+				
+				
+				
+				</style>
 			<link rel="icon" href="/wp-content/uploads/2024/08/Logo5.png" sizes="32x32">
 <link rel="icon" href="/wp-content/uploads/2024/08/Logo5.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/2024/08/Logo5.png">
