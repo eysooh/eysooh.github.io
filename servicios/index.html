@@ -38,7 +38,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="elementor-pro-css" href="/wp-content/plugins/pro-elements/assets/css/frontend-lite.min.css?ver=3.23.3" media="all">
 <link rel="stylesheet" id="font-awesome-5-all-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.23.4" media="all">
 <link rel="stylesheet" id="font-awesome-4-shim-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.23.4" media="all">
-<link rel="stylesheet" id="elementor-post-542-css" href="/wp-content/uploads/elementor/css/post-542.css?ver=1728607652" media="all">
+<link rel="stylesheet" id="elementor-post-542-css" href="/wp-content/uploads/elementor/css/post-542.css?ver=1728797109" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.6.2" media="all">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <!--[if IE]>
@@ -109,7 +109,7 @@ flexibility(document.documentElement);
 </ul></div></nav></div></div>		</div>
 				<div class="ast-builder-layout-element ast-flex site-header-focus-item ast-header-button-1" data-section="section-hb-button-1">
 			<div class="ast-builder-button-wrap ast-builder-button-size-">
-<a class="ast-custom-button-link" target="_self"><div class="ast-custom-button">PORTAFOLIO</div></a><a class="menu-link" target="_self">PORTAFOLIO</a>
+<a class="ast-custom-button-link" href="/portafolio/" target="_self"><div class="ast-custom-button">PORTAFOLIO</div></a><a class="menu-link" href="/portafolio/" target="_self">PORTAFOLIO</a>
 </div>		</div>
 									</div>
 												</div>
@@ -207,68 +207,335 @@ flexibility(document.documentElement);
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
 <h1 class="elementor-heading-title elementor-size-default">Servicios</h1>		</div>
 				</div>
+				<div class="elementor-element elementor-element-3245aa4 elementor-widget elementor-widget-html" data-id="3245aa4" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Productor Multimedia</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+            --accent-color: #F7FFF7;
+            --background-color: #1A535C;
+            --text-color: #F7FFF7;
+        }
+
+        
+
+        .service-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 3.5em;
+            margin-bottom: 50px;
+            color: var(--accent-color);
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background-color: var(--secondary-color);
+        }
+
+        .intro {
+            text-align: center;
+            margin: 0 auto 60px;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .service-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+
+        .service-item:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            transition: all 0.5s ease;
+        }
+
+        .service-item:hover .service-icon {
+            transform: rotate(360deg) scale(1.2);
+        }
+
+        .service-title {
+            font-size: 1.6em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .service-description {
+            font-size: 1em;
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        .hidden {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100%);
+            transition: all 1s;
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @media (max-width: 768px) {
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }</style>
+
+
+    <section class="service-section">
+        
+        <div class="service-grid">
+            <div class="service-item hidden">
+                <div class="service-icon floating">🎥</div>
+                <div class="service-title">Producción de Video</div>
+                <div class="service-description">Convierto videos sencillos en un video dinamico y atractivo visualmente, cautivador que conectan con tu audiencia.</div>
+            </div>
+            <div class="service-item hidden">
+                <div class="service-icon floating">🖌️</div>
+                <div class="service-title">Magia en Photoshop</div>
+                <div class="service-description">Retoco y edito imágenes para darles ese toque profesional y natural que hará que tu marca resalte.</div>
+            </div>
+            <div class="service-item hidden">
+                <div class="service-icon floating">✒️</div>
+                <div class="service-title">Creaciones en Illustrator</div>
+                <div class="service-description">Diseño gráficos vectoriales para impresion manteniendo la calidad de la imagen que capturan la esencia de tu marca.</div>
+            </div>
+            <div class="service-item hidden">
+                <div class="service-icon floating">📱</div>
+                <div class="service-title">Gestión de Redes Sociales</div>
+                <div class="service-description">Impulso tu presencia online con estrategias personalizadas y contenido atractivo para tu publico.</div>
+            </div>
+            <div class="service-item hidden">
+                <div class="service-icon floating">📈</div>
+                <div class="service-title">Asesoría en Tendencias</div>
+                <div class="service-description">Te mantengo a la vanguardia con las últimas tendencias en diseño y marketing digital generando un engagement en tu audiencia que conecte.</div>
+            </div>
+            <div class="service-item hidden">
+                <div class="service-icon floating">📸</div>
+                <div class="service-title">Fotografía Creativa</div>
+                <div class="service-description">Capto la esencia de tu marca a través de imágenes que transmiten elegancia y frescura.</div>
+            </div>
+        </div>
+    </section>
+
+    <script>const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        document.querySelectorAll('.service-item').forEach(item => {
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const xPercent = x / rect.width;
+                const yPercent = y / rect.height;
+                
+                const rotateX = (yPercent - 0.5) * 20; // -10 to 10 degrees
+                const rotateY = (xPercent - 0.5) * -20; // -10 to 10 degrees
+                
+                item.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+            });
+        });</script>
+
+		</div>
+				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-763a77a e-flex e-con-boxed elementor-invisible e-con e-parent" data-id="763a77a" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+		<div class="elementor-element elementor-element-763a77a e-grid e-con-boxed elementor-invisible e-con e-parent" data-id="763a77a" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-b19ea39 e-con-full e-flex e-con e-child" data-id="b19ea39" data-element_type="container">
-				<div class="elementor-element elementor-element-f99f203 elementor-widget elementor-widget-image" data-id="f99f203" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-1b1b40c elementor-widget elementor-widget-html" data-id="1b1b40c" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.23.0 - 05-08-2024 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img decoding="async" src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2021/02/outdoor-image-03.jpg" title="" alt="" loading="lazy">													</div>
-				</div>
-				<div class="elementor-element elementor-element-d1c18d2 elementor-widget elementor-widget-image-box" data-id="d1c18d2" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.23.0 - 05-08-2024 */
-.elementor-widget-image-box .elementor-image-box-content{width:100%}@media (min-width:768px){.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{display:flex}.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{text-align:end;flex-direction:row-reverse}.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper{text-align:start;flex-direction:row}.elementor-widget-image-box.elementor-position-top .elementor-image-box-img{margin:auto}.elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper{align-items:flex-start}.elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper{align-items:center}.elementor-widget-image-box.elementor-vertical-align-bottom .elementor-image-box-wrapper{align-items:flex-end}}@media (max-width:767px){.elementor-widget-image-box .elementor-image-box-img{margin-left:auto!important;margin-right:auto!important;margin-bottom:15px}}.elementor-widget-image-box .elementor-image-box-img{display:inline-block}.elementor-widget-image-box .elementor-image-box-title a{color:inherit}.elementor-widget-image-box .elementor-image-box-wrapper{text-align:center}.elementor-widget-image-box .elementor-image-box-description{margin:0}</style>
-<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content">
-<h5 class="elementor-image-box-title">Backpacking Trips</h5>
-<p class="elementor-image-box-description">Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.</p>
-</div></div>		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-ec35598 e-con-full e-flex e-con e-child" data-id="ec35598" data-element_type="container">
-				<div class="elementor-element elementor-element-2d2b862 elementor-widget elementor-widget-image" data-id="2d2b862" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-													<img decoding="async" src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/services-2.jpg" title="" alt="" loading="lazy">													</div>
-				</div>
-				<div class="elementor-element elementor-element-fa4c287 elementor-widget elementor-widget-image-box" data-id="fa4c287" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content">
-<h5 class="elementor-image-box-title">Family Hiking Trips</h5>
-<p class="elementor-image-box-description">Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.</p>
-</div></div>		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-5ce4035 e-flex e-con-boxed elementor-invisible e-con e-parent" data-id="5ce4035" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-a722f70 e-con-full e-flex e-con e-child" data-id="a722f70" data-element_type="container">
-				<div class="elementor-element elementor-element-07df97f elementor-widget elementor-widget-image" data-id="07df97f" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-													<img decoding="async" src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/services-3.jpg" title="" alt="" loading="lazy">													</div>
-				</div>
-				<div class="elementor-element elementor-element-da03def elementor-widget elementor-widget-image-box" data-id="da03def" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content">
-<h5 class="elementor-image-box-title">Water Sports</h5>
-<p class="elementor-image-box-description">Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.</p>
-</div></div>		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-78f6d94 e-con-full e-flex e-con e-child" data-id="78f6d94" data-element_type="container">
-				<div class="elementor-element elementor-element-4befabd elementor-widget elementor-widget-image" data-id="4befabd" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-													<img decoding="async" src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2021/02/outdoor-image-01.jpg" title="" alt="" loading="lazy">													</div>
-				</div>
-				<div class="elementor-element elementor-element-03e1dc6 elementor-widget elementor-widget-image-box" data-id="03e1dc6" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content">
-<h5 class="elementor-image-box-title">Winter Sports</h5>
-<p class="elementor-image-box-description">Fuerat aestu carentem habentia spectent tonitrua mutastis locavit liberioris inistra possedit.</p>
-</div></div>		</div>
+			
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Softwares</title>
+    <style>.software-section {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .software-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .software-logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+        .skill-bar-container {
+            flex-grow: 1;
+        }
+        .skill-bar {
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .skill-level {
+            height: 100%;
+            background-color: #4CAF50;
+            text-align: right;
+            padding-right: 5px;
+            line-height: 20px;
+            color: white;
+            width: 0;
+            transition: width 1.5s ease-out;
+        }</style>
+
+
+    <div class="software-section">
+        <h2>Softwares</h2>
+        
+        <div class="software-item">
+            <img decoding="async" src="/wp-content/uploads/2024/10/Photoshop.png" alt="Photoshop" class="software-logo">
+            <div class="skill-bar-container">
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="85">0%</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="software-item">
+            <img decoding="async" src="/wp-content/uploads/2024/10/Illustrator.png" alt="Illustrator" class="software-logo">
+            <div class="skill-bar-container">
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="70">0%</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="software-item">
+            <img decoding="async" src="/wp-content/uploads/2024/10/Wordpress.png" alt="WordPress" class="software-logo">
+            <div class="skill-bar-container">
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="75">0%</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="software-item">
+            <img decoding="async" src="/wp-content/uploads/2024/10/Capcut.png" alt="CapCut" class="software-logo">
+            <div class="skill-bar-container">
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="70">0%</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="software-item">
+            <img decoding="async" src="/wp-content/uploads/2024/10/Lightroom.png" alt="Lightroom" class="software-logo">
+            <div class="skill-bar-container">
+                <div class="skill-bar">
+                    <div class="skill-level" data-level="75">0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function animateSkillBars() {
+            var skillLevels = document.querySelectorAll('.skill-level');
+            skillLevels.forEach(function(level) {
+                if (isElementInViewport(level) && !level.style.width) {
+                    var targetLevel = level.getAttribute('data-level');
+                    level.style.width = targetLevel + '%';
+                    level.textContent = targetLevel + '%';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateSkillBars);
+        window.addEventListener('load', animateSkillBars);
+    </script>
+
+		</div>
 				</div>
 				</div>
 					</div>
@@ -354,11 +621,11 @@ flexibility(document.documentElement);
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 </script>
-<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"ef7b71c1da","urls":{"assets":"\/wp-content\/plugins\/pro-elements\/assets\/","rest":"\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"es_CO","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};</script>
+<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"61a48db7a4","urls":{"assets":"\/wp-content\/plugins\/pro-elements\/assets\/","rest":"\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"es_CO","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};</script>
 <script src="/wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=3.23.3" id="elementor-pro-frontend-js"></script>
 <script src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
-<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir vídeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portátil","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.4","is_static":false,"experimentalFeatures":{"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"editor_v2":true,"ai-layout":true,"e_lazyload":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true,"search":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"d114bf4bf3"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":542,"title":"Servicios%20%E2%80%93%20Eysooh%20%7C%20Productor%20Multimedia","excerpt":"","featuredImage":false}};</script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir vídeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portátil","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.4","is_static":false,"experimentalFeatures":{"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"editor_v2":true,"ai-layout":true,"e_lazyload":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true,"search":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"5df032bf4b"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":542,"title":"Servicios%20%E2%80%93%20Eysooh%20%7C%20Productor%20Multimedia","excerpt":"","featuredImage":false}};</script>
 <script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.4" id="elementor-frontend-js"></script>
 <script src="/wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=3.23.3" id="pro-elements-handlers-js"></script>
 <script src="/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
@@ -456,5 +723,6 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
     }
 }</style>
 
-	</body>
+	
+</body>
 </html>
