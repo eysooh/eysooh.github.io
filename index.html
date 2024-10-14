@@ -38,7 +38,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="elementor-pro-css" href="/wp-content/plugins/pro-elements/assets/css/frontend-lite.min.css?ver=3.23.3" media="all">
 <link rel="stylesheet" id="font-awesome-5-all-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.23.4" media="all">
 <link rel="stylesheet" id="font-awesome-4-shim-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.23.4" media="all">
-<link rel="stylesheet" id="elementor-post-540-css" href="/wp-content/uploads/elementor/css/post-540.css?ver=1728869145" media="all">
+<link rel="stylesheet" id="elementor-post-540-css" href="/wp-content/uploads/elementor/css/post-540.css?ver=1728939257" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.6.2" media="all">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <!--[if IE]>
@@ -302,6 +302,56 @@ flexibility(document.documentElement);
         }, false);</script>		</div>
 				</div>
 				</div>
+				<div class="elementor-element elementor-element-69d795e elementor-widget elementor-widget-html" data-id="69d795e" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón Flotante con Flecha en V</title>
+    <link rel="stylesheet" href="/styles.css">
+
+
+    <div> <!-- Espacio para el desplazamiento -->
+        <!-- Contenedor del botón y texto -->
+        <div class="floating-container" id="floatingContainer">
+            <div class="text">MI TRABAJO</div>
+            <div class="floating-button" id="scrollButton">
+                <div class="v-shape"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para hacer scroll de aproximadamente 980px hacia abajo
+document.getElementById('scrollButton').addEventListener('click', function() {
+    window.scrollBy({
+        top: 860,  // Desplazamiento en píxeles
+        behavior: 'smooth'  // Desplazamiento suave
+    });
+});
+
+// Detectar el evento de scroll para ocultar el botón y el texto
+window.addEventListener('scroll', function() {
+    var scrollPos = window.scrollY || document.documentElement.scrollTop;
+
+    var floatingContainer = document.getElementById('floatingContainer');
+
+    // Si el usuario ha hecho scroll más allá de 980px
+    if (scrollPos > 50) {
+        floatingContainer.classList.add('hidden'); // Ocultar el botón
+    } else if (scrollPos < 400) {
+        // Si el usuario está por encima de 960px, mostrar el botón
+        floatingContainer.classList.remove('hidden'); // Mostrar el botón de nuevo
+    }
+});
+
+    </script>
+
+
+		</div>
+				</div>
 				</div>
 					</div>
 				</div>
@@ -433,7 +483,7 @@ flexibility(document.documentElement);
 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 8"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="f24a55b" data-elementor-lightbox-title="Comida" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjAxNiwidXJsIjoiaHR0cDpcL1wvbG9jYWxob3N0XC93b3JkcHJlc3NcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzEwXC9Db21pZGEucG5nIiwic2xpZGVzaG93IjoiZjI0YTU1YiJ9" href="/wp-content/uploads/2024/10/Comida.png"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="/wp-content/uploads/2024/10/Comida.png" alt="Comida"><div class="swiper-lazy-preloader"></div></figure></a></div>
 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 8"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="f24a55b" data-elementor-lightbox-title="morning" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjAxNywidXJsIjoiaHR0cDpcL1wvbG9jYWxob3N0XC93b3JkcHJlc3NcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzEwXC9tb3JuaW5nLnBuZyIsInNsaWRlc2hvdyI6ImYyNGE1NWIifQ%3D%3D" href="/wp-content/uploads/2024/10/morning.png"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="/wp-content/uploads/2024/10/morning.png" alt="morning"><div class="swiper-lazy-preloader"></div></figure></a></div>
 <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 8"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="f24a55b" data-elementor-lightbox-title="sabado2" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjAxOCwidXJsIjoiaHR0cDpcL1wvbG9jYWxob3N0XC93b3JkcHJlc3NcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzEwXC9zYWJhZG8yLnBuZyIsInNsaWRlc2hvdyI6ImYyNGE1NWIifQ%3D%3D" href="/wp-content/uploads/2024/10/sabado2.png"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="/wp-content/uploads/2024/10/sabado2.png" alt="sabado2"><div class="swiper-lazy-preloader"></div></figure></a></div>
-<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 of 8"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="f24a55b" data-elementor-lightbox-title="InstagramPost" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjEzMiwidXJsIjoiaHR0cDpcL1wvbG9jYWxob3N0XC93b3JkcHJlc3NcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzEwXC9JbnN0YWdyYW1Qb3N0LmpwZyIsInNsaWRlc2hvdyI6ImYyNGE1NWIifQ%3D%3D" href="/wp-content/uploads/2024/10/InstagramPost.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="/wp-content/uploads/2024/10/InstagramPost.jpg" alt="InstagramPost"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
+<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 of 8"><a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="f24a55b" data-elementor-lightbox-title="13-10-2024" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjEzMiwidXJsIjoiaHR0cDpcL1wvbG9jYWxob3N0XC93b3JkcHJlc3NcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjRcLzEwXC9JbnN0YWdyYW1Qb3N0LmpwZyIsInNsaWRlc2hvdyI6ImYyNGE1NWIifQ%3D%3D" href="/wp-content/uploads/2024/10/InstagramPost.jpg"><figure class="swiper-slide-inner"><img class="swiper-slide-image swiper-lazy" data-src="/wp-content/uploads/2024/10/InstagramPost.jpg" alt="13-10-2024"><div class="swiper-lazy-preloader"></div></figure></a></div>			</div>
 												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
 						<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>					</div>
 					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
@@ -512,135 +562,6 @@ flexibility(document.documentElement);
 									<div class="swiper-pagination"></div>
 									</div>
 				</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-517dd88 e-con-full e-flex e-con e-child" data-id="517dd88" data-element_type="container">
-				<div class="elementor-element elementor-element-bd37c6e elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="bd37c6e" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-1a0579e elementor-widget elementor-widget-heading" data-id="1a0579e" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">Piezas Publicitarias</h3>		</div>
-				</div>
-				<div class="elementor-element elementor-element-81d806f elementor-invisible elementor-widget elementor-widget-html" data-id="81d806f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<div class="before-after-gallery">
-  <div class="gallery-item">
-    <div class="image-container">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-1-d.jpg" alt="Antes" class="before-image">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-1.jpg" alt="Después" class="after-image">
-      <div class="slider-handle"></div>
-    </div>
-  </div>
-  <div class="gallery-item">
-    <div class="image-container">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-2-d.jpg" alt="Antes" class="before-image">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-2.jpg" alt="Después" class="after-image">
-      <div class="slider-handle"></div>
-    </div>
-  </div>
-  <div class="gallery-item">
-    <div class="image-container">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-3-d.jpg" alt="Antes" class="before-image">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-3.jpg" alt="Después" class="after-image">
-      <div class="slider-handle"></div>
-    </div>
-  </div>
-  <div class="gallery-item">
-    <div class="image-container">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-4-d.jpg" alt="Antes" class="before-image">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-4.jpg" alt="Después" class="after-image">
-      <div class="slider-handle"></div>
-    </div>
-  </div>
-  <div class="gallery-item">
-    <div class="image-container">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-5-d.jpg" alt="Antes" class="before-image">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-5.jpg" alt="Después" class="after-image">
-      <div class="slider-handle"></div>
-    </div>
-  </div>
-  <div class="gallery-item">
-    <div class="image-container">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-6-d.jpg" alt="Antes" class="before-image">
-      <img decoding="async" src="/wp-content/uploads/2024/08/Fotografia-6.jpg" alt="Después" class="after-image">
-      <div class="slider-handle"></div>
-    </div>
-  </div>
-  <!-- Repite este patrón para las demás imágenes -->
-</div>
-
-<script>document.addEventListener('DOMContentLoaded', function() {
-  const containers = document.querySelectorAll('.image-container');
-
-  containers.forEach(container => {
-    const slider = container.querySelector('.slider-handle');
-    const afterImage = container.querySelector('.after-image');
-
-    let isResizing = false;
-
-    slider.addEventListener('mousedown', function(e) {
-      isResizing = true;
-      e.preventDefault();
-    });
-
-    document.addEventListener('mousemove', function(e) {
-      if (!isResizing) return;
-
-      const containerRect = container.getBoundingClientRect();
-      let newPosition = (e.clientX - containerRect.left) / containerRect.width;
-
-      newPosition = Math.max(0, Math.min(1, newPosition));
-
-      slider.style.left = newPosition * 100 + '%';
-      afterImage.style.clipPath = `inset(0 ${100 - newPosition * 100}% 0 0)`;
-    });
-
-    document.addEventListener('mouseup', function() {
-      isResizing = false;
-    });
-
-    // Asegurarse de que el deslizador funcione correctamente en dispositivos táctiles
-    slider.addEventListener('touchstart', function(e) {
-      isResizing = true;
-      e.preventDefault();
-    });
-
-    document.addEventListener('touchmove', function(e) {
-      if (!isResizing) return;
-
-      const touch = e.touches[0];
-      const containerRect = container.getBoundingClientRect();
-      let newPosition = (touch.clientX - containerRect.left) / containerRect.width;
-
-      newPosition = Math.max(0, Math.min(1, newPosition));
-
-      slider.style.left = newPosition * 100 + '%';
-      afterImage.style.clipPath = `inset(0 ${100 - newPosition * 100}% 0 0)`;
-    });
-
-    document.addEventListener('touchend', function() {
-      isResizing = false;
-    });
-  });
-});</script>		</div>
-				</div>
-				<div class="elementor-element elementor-element-0ac4555 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="0ac4555" data-element_type="widget" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-a0dbddb elementor-widget elementor-widget-heading" data-id="a0dbddb" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">Piezas Publicitarias</h3>		</div>
 				</div>
 				</div>
 				</div>
@@ -958,11 +879,11 @@ flexibility(document.documentElement);
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 </script>
-<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"3882a60124","urls":{"assets":"\/wp-content\/plugins\/pro-elements\/assets\/","rest":"\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"es_CO","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};</script>
+<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"0c5dae56cf","urls":{"assets":"\/wp-content\/plugins\/pro-elements\/assets\/","rest":"\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"es_CO","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};</script>
 <script src="/wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=3.23.3" id="elementor-pro-frontend-js"></script>
 <script src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
-<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir vídeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portátil","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.4","is_static":false,"experimentalFeatures":{"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"editor_v2":true,"ai-layout":true,"e_lazyload":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true,"search":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"7c1d5cf1cc"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":540,"title":"Eysooh%20%7C%20Productor%20Multimedia","excerpt":"","featuredImage":false}};</script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir vídeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portátil","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.4","is_static":false,"experimentalFeatures":{"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"editor_v2":true,"ai-layout":true,"e_lazyload":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true,"search":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"7ca6434db4"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":540,"title":"Eysooh%20%7C%20Productor%20Multimedia","excerpt":"","featuredImage":false}};</script>
 <script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.4" id="elementor-frontend-js"></script>
 <script src="/wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=3.23.3" id="pro-elements-handlers-js"></script>
 <script src="/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
@@ -1060,5 +981,6 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
     }
 }</style>
 
-	</body>
+	
+</body>
 </html>
